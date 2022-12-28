@@ -5,7 +5,12 @@
 
 name: Java CI
 
-on: [push]
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'v3-mc-1-19-3'
 
 jobs:
   build:
